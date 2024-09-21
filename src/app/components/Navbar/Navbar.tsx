@@ -23,7 +23,9 @@ export const Navbar: React.FC = () => {
     return (
         <nav
       className={`fixed top-0 w-full h-20 z-50 transition-colors duration-300 ease-in-out ${
-        navbarBg ? 'bg-primaryLila' : 'bg-transparent'
+        navbarBg
+          ? 'bg-white bg-opacity-30 backdrop-blur-lg'
+          : 'bg-transparent'
       }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 mt-2">
@@ -33,13 +35,13 @@ export const Navbar: React.FC = () => {
             </a>
           </div>
           <div className="flex items-center space-x-8">
-            <a href="#" className="text-white text-lg hidden sm:block">
+            <a href="#" className="text-white text-lg hidden sm:block hover:text-primaryLila">
               Planes
             </a>
             <a
               href="#"
-              className="border border-white text-white px-4 py-2  hover:bg-white hover:text-gray-900 transition duration-300">
-              Conversemos <span className="inline-block transform rotate-45">↑</span>
+              className="border border-white text-white px-4 py-2  hover:bg-primaryLila  transition duration-300">
+              Conversemos <span className="inline-block transform rotate-45 ">↑</span>
             </a>
           </div>
         </div>
