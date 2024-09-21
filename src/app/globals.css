@@ -6,6 +6,7 @@
   --background: #ffffff;
   --foreground: #171717;
   --primaryLila: #6D28FF;
+  --primaryBlack: #0C0C0C;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -13,12 +14,22 @@
     --background: #717171;
     --foreground: #ededed;
     --primaryLila: #6D28FF;
+    
   }
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url(/Epilogue-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family:"Figtree";
+  src: url(/Figtree-VariableFont_wght.ttf) format("truetype");
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -26,4 +37,19 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+h2{
+  font-family: Epilogue;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--primaryBlack); ;
+}
+
+p{
+  font-family: Figtree;
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--primaryBlack);
 }
