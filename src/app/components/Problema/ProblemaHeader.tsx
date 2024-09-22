@@ -17,12 +17,12 @@ export const ProblemaHeader = () => {
   </div>
 
   {/* Título h2 centrado */}
-  <h2 className="text-center ">
+  <h2 className="sm:text-center text-[20px] sm:text-[38px]">
     Así es cómo te guiaremos para que te diferencies y destaques en internet con la página principal de tu web
   </h2>
 
   {/* Párrafo centrado */}
-  <p className="text-center ">
+  <p className="sm:text-center ">
     Conoce nuestra metodología para empresas de servicios tecnológicos B2B y SaaS:
   </p>
 </div>
