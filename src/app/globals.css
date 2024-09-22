@@ -42,14 +42,20 @@ body {
 
 h2{
   font-family: Epilogue;
-  font-size: 40px;
-  font-weight: 500;
-  color: var(--primaryBlack); ;
+  font-size: 38px;
+  font-weight: 600;
+  color: var(--primaryBlack); 
 }
 
 p{
   font-family: Figtree;
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   color: var(--primaryBlack);
+}
+h3{
+  font-family: Epilogue;
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primaryBlack); 
 }

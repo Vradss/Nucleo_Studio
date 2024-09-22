@@ -13,19 +13,19 @@ export const Problema: React.FC = () => {
     };
 
     return (
-        <div className="w-full max-w-5xl mx-auto mt-10 px-4">
+        <div className="w-full max-w-7xl mx-auto mt-10 px-4 ">
         <ProblemaHeader />
   
         {/* Toggle Buttons para pantallas grandes */}
-        <div className="hidden sm:flex mt-16 justify-center border border-black">
+        <div className="hidden sm:flex mt-6 justify-center ">
           {[1, 2, 3, 4, 5].map((button) => (
             <button
               key={button}
               onClick={() => handleToggle(button)}
-              className={`px-2 w-full py-2 text-lg border border-l-black transition duration-300 text-center ${
+              className={`px-2 w-full py-2 text-lg border border-primaryLila transition duration-300 text-center ${
                 activeButton === button
-                  ? 'bg-primaryLila text-white border-black'
-                  : 'bg-white text-primaryLila border-black'
+                  ? 'bg-primaryLila text-white '
+                  : 'bg-white text-primaryLila '
               } hover:bg-primaryLila hover:text-white`}
             >
               ETAPA {button}
@@ -34,7 +34,7 @@ export const Problema: React.FC = () => {
         </div>
   
         {/* Contenido dinámico para pantallas grandes */}
-        <div className="hidden sm:block mt-6 p-4">
+        <div className="hidden sm:block mt-6 p-4 max-w-8xl">
           {activeButton === 1 && <div><Cont1 /></div>}
           {activeButton === 2 && <div>Contenido del botón 2</div>}
           {activeButton === 3 && <div>Contenido del botón 3</div>}

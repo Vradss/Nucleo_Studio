@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 export const ProblemaHeader = () => {
     return (
-    <div className="flex flex-col items-center justify-center space-y-4">
+    <div className="flex flex-col items-center justify-center space-y-1 ">
   {/* Div con el contenido y la imagen */}
-  <div className="border border-primaryLila px-2 py-1 flex justify-center items-center text-primaryLila w-40">
+  <div className="border border-primaryLila px-2  flex justify-center items-center text-primaryLila w-40">
     <Image
       src="/arrow-purple.svg"
       alt="arrow_icon"
