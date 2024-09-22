@@ -44,22 +44,27 @@ export const Problema: React.FC = () => {
             {/* Versión móvil: Mostrar cada botón con su contenido directamente uno debajo del otro */}
             <div className="sm:hidden space-y-4">
                 <div className=" mt-4">
+                <hr  />
                     <div>
                         <Cont1 />
                     </div>
                 </div>
                 <div className=" mt-4">
+                <hr  />
                     <div>
                         <Cont1 />
                     </div>
                 </div>
                 <div className=" mt-2">
+                <hr  />
                     <div className="mt-2">Contenido del botón 3</div>
                 </div>
                 <div className=" mt-2">
+                <hr  />
                     <div className="mt-2">Contenido del botón 4</div>
                 </div>
                 <div className=" mt-2">
+                <hr  />
                     <div className="mt-2">Contenido del botón 5</div>
                 </div>
             </div>
