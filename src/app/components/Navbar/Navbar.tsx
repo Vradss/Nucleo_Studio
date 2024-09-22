@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const Navbar: React.FC = () => {
     const [navbarBg, setNavbarBg] = useState(false);
@@ -30,7 +31,7 @@ export const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-16 mt-2">
             {/* Logo dinámico */}
             <div>
-              <a href="#">
+              <a href="/">
                 {navbarBg ? (
                   <Image src="/logo-black.png" alt="Logo_nucleo_dark" width={150} height={50} />
                 ) : (
@@ -41,16 +42,16 @@ export const Navbar: React.FC = () => {
             
             {/* Enlaces de navegación */}
             <div className="flex items-center space-x-8">
-              <a
+              <Link
                 href="#"
                 className={`text-lg hidden sm:block transition-colors duration-300 ${
                   navbarBg ? 'text-black' : 'text-white'
                 } hover:text-primaryLila `}
               >
                 Planes
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/meetings"
                 className={`border px-4 py-2 rounded-md transition-colors duration-300 flex ${
                   navbarBg ? 'border-black text-black hover:text-white' : 'border-white text-white hover:text-white'
                 } hover:bg-primaryLila hover:text-white`}
@@ -63,7 +64,7 @@ export const Navbar: React.FC = () => {
                 height={10} 
                 className="ml-4 hover:text-white"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Navbar } from './components/Navbar';
 import "./globals.css";
@@ -32,40 +31,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
-        <p>
-          <ul>
-            <div className="flex justify-center items-center h-screen">
-              <div className="bg-white p-8 rounded-lg shadow-lg max-w-lg text-center">
-                <h2 className="text-3xl  mb-4">Dorem Ipsum Title</h2>
-                <p className="text-gray-600 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac lacus sit amet urna faucibus fermentum vel sit amet nulla. Cras sit amet quam ultricies, volutpat elit vel, lacinia metus. Donec facilisis, nibh non condimentum aliquet, arcu turpis viverra mi, at posuere dui dolor ac nisi.
-                </p>
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwJkQoDOcaaKTF7c2GLn-uWGAuRt692dXi8A&s"
-                  alt="Placeholder"
-                  className="mx-auto rounded-lg"/>
-              </div>
-            </div>
-            <li>Punto 7</li>
-            <li>Punto 8</li>
-            <li>Punto 9</li>
-            <li>Punto 10</li>
-            <li>Punto 11</li>
-            <li>Punto 12</li>
-            <li>Punto 13</li>
-            <li>Punto 14</li>
-            <li>Punto 15</li>
-            <li>Punto 16</li>
-            <li>Punto 17</li>
-            <li>Punto 18</li>
-            <li>Punto 19</li>
-            <li>Punto 20</li>
-            <li>Punto 21</li>
-            <li>Punto 22</li>
-            <li>Punto 23</li>
-            <li>Punto 24</li>
-          </ul>
-        </p>
         <Footer />
       </body>
     </html>
