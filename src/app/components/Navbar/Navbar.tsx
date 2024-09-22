@@ -31,13 +31,13 @@ export const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-16 mt-2">
             {/* Logo dinámico */}
             <div>
-              <a href="/">
+              <Link href="/">
                 {navbarBg ? (
                   <Image src="/logo-black.png" alt="Logo_nucleo_dark" width={150} height={50} />
                 ) : (
                   <Image src="/logo-blanc.png" alt="Logo_nucleo" width={150} height={50} />
                 )}
-              </a>
+              </Link>
             </div>
             
             {/* Enlaces de navegación */}
@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
               </Link>
               <Link
                 href="/meetings"
-                className={`border px-4 py-2 rounded-md transition-colors duration-300 flex ${
+                className={`border px-4 py-2 transition-colors duration-300 flex ${
                   navbarBg ? 'border-black text-black hover:text-white' : 'border-white text-white hover:text-white'
                 } hover:bg-primaryLila hover:text-white`}
               >

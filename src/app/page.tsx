@@ -1,13 +1,13 @@
 "use client"
+import { Hero } from './components/Home/Hero';
+import "./globals.css";
 
 
 export default function Home() {
-  console.log('gaaaa')
   return (
     <div>
-
+      <Hero />
     </div>
 
-   
   );
 }
